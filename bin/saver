@@ -1,0 +1,7 @@
+#!/bin/bash
+# Run the Python implementation from anywhere: bin/saver [--live 10] [--palette moon] ...
+# Uses python/.venv (made by `make setup`) if present, else python3 from PATH.
+here=$(dirname "$(readlink -f "$0")")/..
+py=$here/python/.venv/bin/python
+[[ -x $py ]] || py=python3
+PYTHONPATH="$here/python" exec "$py" -m saver "$@"

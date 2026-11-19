@@ -1,0 +1,13 @@
+[project]
+name = "saver"
+version = "0.1.0"
+description = "Sakura & Bamboo terminal screensaver (reference implementation)"
+requires-python = ">=3.11"
+dependencies = ["numpy", "pillow"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

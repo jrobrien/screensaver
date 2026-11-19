@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+python/.venv/
+vendor/
+# build outputs
+c/saver
+c/build/
+go/saver
+zig/zig-out/
+zig/.zig-cache/
+odin/saver
+odin/saver-debug
+odin/saver-test
+
+# review screenshots (README images live in docs/images/)
+shots/

@@ -1,0 +1,7 @@
+# Toolchains for every implementation. `make setup` installs them.
+# C uses the system cc/make; Python packages come from uv (python/pyproject.toml).
+[tools]
+go = "1.27.4"
+zig = "0.17.1"
+odin = "dev-2026-11a"
+uv = "latest"
